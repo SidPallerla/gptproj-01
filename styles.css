@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #808080; /* Light gray background */
+  }
+  
+  .container {
+    height: 100%; /* Make container fill the entire height of the viewport */
+    width: 100%; /* Make container fill the entire width of the viewport */
+    margin: 20px auto; /* Center container */
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  }
+  
+  h1 {
+    text-align: center;
+    color: #007bff; /* Blue color for heading */
+  }
+  
+  .chat-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 400px;
+    overflow-y: scroll;
+    background-color: #f0f0f0; /* Light gray background */
+    border-radius: 5px;
+  }
+  
+  .user-message {
+    background-color: #d4edda; /* Light green background for user messages */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .assistant-message {
+    background-color: #cce5ff; /* Light blue background for assistant messages */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #0a0b0c; /* Blue button background */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+  }

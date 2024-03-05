@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> AI Chatbot</title>
+  <link rel="stylesheet" href="styles.css">
+  <style> 
+    body {
+      font-family: Georgia, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .chat-container {
+      border: 1px solid #090707;
+      padding: 10px;
+      height: 400px;
+      flex-grow: 1;
+      overflow-y: scroll;
+    }
+    .user-message {
+      background-color: #0d0101;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+    .assistant-message {
+      background-color: #000406;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+    input[type="text"] {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .recently-viewed {
+      width: 20%; /* Set the width of the recently viewed box */
+      height: 80%;
+      padding: 20px;
+      background-color: #f0f0f0; /* Set background color */
+      border: 1px solid #ccc;
+      position: absolute; /* Position the box absolutely */
+      top: 20px; /* Distance from top */
+      left: 20px; /* Distance from left */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>ChatGPT 4 Chatbot
+    </h1>
+    <div class="chat-container" id="chat-container">
+      <!-- Chat messages will be displayed here -->
+    </div>
+    <input type="text" id="user-input" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+  <div class="recently-viewed">
+    <h2>Recently Viewed</h2>
+    <!-- Content for recently viewed box goes here -->
+  </div>
+  <script>src="app.js"</script>
