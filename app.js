@@ -1,4 +1,4 @@
-const API_KEY = "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"
+const API_KEY = "redacted"
 const searchBar = document.getElementById('#input');
 const output = document.querySelector("#chat-container")
 
